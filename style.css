@@ -17,6 +17,7 @@ body {
 }
 /*---------------------------------------------Page 1---------------------------------------------*/
 .top {
+    position: relative;
     max-width: 960px;
     margin: auto;
     overflow: hidden;
@@ -318,31 +319,78 @@ body {
     }
         /*---------------------------------------------@media---------------------------------------------*/
 
+        @media (max-width: 414px)   {
+            .page1 .top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                height: 25%;
+                width: 400px;
+                height: 100px;
+             
+            }
+            .page1 h1 {
+                font-size: 2rem;
+                color: var(--primary-color);
+            }
+            .page1 p{
+                font-size: 1rem;
+                color: var(--primary-color);
+                font-weight: 600;
+        }
 
-        @media (max-width:414px) {
-    .page1 {
-     width: 100vw;
-    }
-    .page1 .top {
-        display: flex;
-        justify-content: start;
-    }
-    .page1 h1 {
-        font-size: 30px;
-        margin-top: 50px;
-    }
-    .page1 p {
-        font-size: 15px;
-    }
-    .page2 {
-        display: block;
-    }
-   
-    .rightside{
-        width: 100%;
-    }
-    .cards {
-        flex-direction: column;
-    }
-}
+        .page1 .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: end;
+            margin-top: 350px;
+        }
+        .rightside h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        .rightside p{
+            font-size: 14px;
+            line-height: 14px;
+           
+        }
+        .page3 h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        .page3 h3 {
+            font-size: 10px;
+            color: var(--secondary-color);
+        }
+        .page3 p {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+           
+    .title {
+        background:rgb(245, 222, 179,0.4);
+         flex-direction: row;
+         align-items: center;
+         text-align: center;
+         margin: 0px;
+         border-radius: 20px;
+         }
 
+         .contact-title h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+            margin-bottom:30px;
+        } 
+        .contact-form input,
+    .contact-form textarea {
+        width: 70%;
+        padding: 10px;
+        margin: 5px 20px 5px 20px
+    }
