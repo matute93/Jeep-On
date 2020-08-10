@@ -373,11 +373,11 @@ body {
         .flip-card-front {
             background-color: #bbb;
             color: black;
-            width: 100px;
+            width: 80px;
             height: 200px;
           }
           .flip-card-front > img {
-            width:150px;
+            width:130px;
             height:200px;
           }
           .cards {
@@ -388,8 +388,20 @@ body {
             margin: 5px;
             margin-top: 20px;
           }
+          .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 350px;
+            perspective: 1000px; 
+          }
           
-           
+          .flip-card-back li {
+            border-bottom: var(--secondary-color) 2px dotted;
+            color: white;
+            margin-top: 20px;
+            font-size: 12px;
+           list-style-type: none;
+        }
     .title {
         background:rgb(245, 222, 179,0.4);
          flex-direction: row;
